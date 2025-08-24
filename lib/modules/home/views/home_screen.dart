@@ -68,7 +68,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: InkWell(
                   borderRadius: BorderRadius.circular(16),
                   onTap: () {
-                    // TODO: Navigate to product details
+                    Get.toNamed("/detailed",arguments: {'id':product.id});
                   },
                   child: Padding(
                     padding: const EdgeInsets.all(16),
@@ -145,6 +145,12 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         );
       }),
+      floatingActionButton: FloatingActionButton(
+          onPressed: (){
+            Get.toNamed('/add');
+          },
+        child: Icon(Icons.add),
+      ),
     );
   }
 

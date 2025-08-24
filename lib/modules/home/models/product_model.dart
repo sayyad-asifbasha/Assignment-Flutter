@@ -1,18 +1,18 @@
 import 'dart:convert';
 
-class Product {
+class ProductModel {
   final String id;
   final String name;
   final Map<String, dynamic>? data;
 
-  Product({
+  ProductModel({
     required this.id,
     required this.name,
     this.data,
   });
 
-  factory Product.fromJson(Map<String, dynamic> json) {
-    return Product(
+  factory ProductModel.fromJson(Map<String, dynamic> json) {
+    return ProductModel(
       id: json['id'] ?? '',
       name: json['name'] ?? '',
       data: json['data'] != null ? Map<String, dynamic>.from(json['data']) : null,
@@ -27,8 +27,16 @@ class Product {
     };
   }
 
-  static List<Product> listFromJson(String str) {
+  static List<ProductModel> listFromJson(String str) {
     final decoded = jsonDecode(str) as List<dynamic>;
-    return decoded.map((json) => Product.fromJson(json)).toList();
+    return decoded.map((json) => ProductModel.fromJson(json)).toList();
+  }
+
+  factory ProductModel.empty() {
+    return ProductModel(
+      id: '',
+      name: '',
+      data: {},
+    );
   }
 }

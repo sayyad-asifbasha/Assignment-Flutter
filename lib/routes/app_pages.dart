@@ -1,5 +1,7 @@
 import 'package:assignment/modules/home/bindings/home_bindings.dart';
+import 'package:assignment/modules/home/views/add_product_screen.dart';
 import 'package:assignment/modules/home/views/home_screen.dart';
+import 'package:assignment/modules/home/views/product_detalied_screen.dart';
 import 'package:assignment/modules/splash/views/splash_screen.dart';
 import 'package:get/get.dart';
 
@@ -35,5 +37,16 @@ class AppPages {
       page: () =>  HomeScreen(),
       binding:HomeBinding(),
     ),
+    GetPage(
+      name: _Paths.DETAILED,
+      page: () =>  ProductDetailsScreen(id: Get.arguments['id'],),
+      binding:HomeBinding(),
+    ),
+    GetPage(
+      name: _Paths.ADD,
+      page: () =>  AddProductScreen(),
+      binding:HomeBinding(),
+    ),
   ];
+  
 }
