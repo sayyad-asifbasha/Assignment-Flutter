@@ -1,1 +1,39 @@
-{"flutter":{"platforms":{"android":{"default":{"projectId":"mess-management-250df","appId":"1:1036113362614:android:0721b3551b0d97b883b017","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"mess-management-250df","configurations":{"android":"1:1036113362614:android:0721b3551b0d97b883b017","ios":"1:1036113362614:ios:c515db01e143f96083b017","macos":"1:1036113362614:ios:c515db01e143f96083b017","web":"1:1036113362614:web:002797f7288869af83b017","windows":"1:1036113362614:web:4251ebc24afe7d1383b017"}}}}}}
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "mess-management-250df",
+          "appId": "1:1036113362614:android:0721b3551b0d97b883b017",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "mess-management-250df",
+          "configurations": {
+            "android": "1:1036113362614:android:0721b3551b0d97b883b017",
+            "ios": "1:1036113362614:ios:c515db01e143f96083b017",
+            "macos": "1:1036113362614:ios:c515db01e143f96083b017",
+            "web": "1:1036113362614:web:002797f7288869af83b017",
+            "windows": "1:1036113362614:web:4251ebc24afe7d1383b017"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

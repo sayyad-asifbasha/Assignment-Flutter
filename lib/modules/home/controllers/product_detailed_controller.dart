@@ -12,7 +12,7 @@ import 'package:assignment/services/storage_service.dart';
 class ProductDetailedController extends GetxController with ExceptionHandler {
   late final String originalId;
 
-  final StorageService storageService = StorageService();
+  StorageService storageService = StorageService();
 
   RxBool isLoading = false.obs;
   RxBool isError = false.obs;
