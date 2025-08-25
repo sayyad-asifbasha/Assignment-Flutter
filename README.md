@@ -1,3 +1,8 @@
+
+Drive link https://drive.google.com/drive/folders/1-wKGFhxm4nUYo2k6YtGYvuwczL4o4sfi
+
+
+
 ### Assignment — Flutter (Android | iOS | Web)
 
 #### Overview
@@ -221,39 +226,4 @@ flutter test
 - Improve UX: OTP auto-paste, country detection, localization, offline handling.
 
 ---
-
-## Upload to Google Drive and Share Public Link
-1) Build artifacts (choose any):
-```bash
-flutter build apk --release            # Android APK
-flutter build appbundle --release      # Android AAB (Play Store)
-flutter build ios --release            # iOS (macOS required)
-flutter build web                      # Web build in build/web
-```
-
-2) Upload to Google Drive:
-- Go to `drive.google.com` and create a folder (e.g., "Assignment Builds").
-- Upload the built files: `build/app/outputs/flutter-apk/app-release.apk`, AAB from `outputs/bundle`, or the zipped `build/web` directory.
-
-3) Make the file public:
-- Right-click the uploaded file → Share → Change to "Anyone with the link" → Viewer.
-- Copy the public link.
-
-4) Paste the link below in this README so others can download:
-
-```
-Public Download Link (Google Drive):
-<PASTE_PUBLIC_LINK_HERE>
-```
-
----
-
-## License
-- For assignment/demo purposes. Add a license if distributing publicly.
-
----
-
-## References
-- Flutter: https://docs.flutter.dev
-- FlutterFire: https://firebase.flutter.dev
-- Firebase Auth (Phone): https://firebase.google.com/docs/auth
+Drive link https://drive.google.com/drive/folders/1-wKGFhxm4nUYo2k6YtGYvuwczL4o4sfi
