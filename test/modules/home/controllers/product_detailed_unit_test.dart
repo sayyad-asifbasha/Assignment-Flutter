@@ -90,7 +90,6 @@ void main() {
 
     group('Controller Properties Tests', () {
       test('should have correct initial state values', () {
-        // Test the controller's initial state without creating the instance
         expect(ProductDetailedController, isA<Type>());
       });
 

@@ -71,6 +71,11 @@ class StorageService {
     final map = getProductIdMap();
     return map[originalId];
   }
+  Future<void> removeProduct(String id) async {
+    final products = getProducts();
+    products.removeWhere((p) => p.id == id);
+    await saveProducts(products);
+  }
 
   Future<void> clearProductIdMap() async {
     await _box.remove(productIdMapKey);
